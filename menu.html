@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        width: 300px;
+        height: 350px;
+        padding: 5px;
+      }
+
+      button {
+        margin: 5px;
+        outline: none;
+        padding: 0;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      input {
+        width: 70%;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .coin-image {
+        padding: 40px;
+        width: 150px;
+        height: 150px;
+      }
+
+      .resulteightball {
+        margin-top: 75px;
+        height: 120px;
+      }
+
+      .randElement {
+        height: 40px;
+      }
+
+      .resultDice {
+        height: 30px;
+      }
+
+      #diceimg {
+        padding: 5px;
+        width: 80px;
+        height: 80px;
+      }
+
+      .menu-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .menubtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: bold;
+        width: 120px;
+        height: 110px;
+        padding: 0;
+        white-space: normal;
+      }
+
+      .menubtn:hover {
+        background-color: #8b8b8b;
+        border-radius: 5px;
+      }
+
+      .backbtn {
+        padding: 10px;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        font-size: 16px;
+        border-radius: 4px;
+      }
+
+      .backbtn:hover {
+        background-color: #860000;
+        border-radius: 5px;
+      }
+
+      .actionbtn {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+      }
+
+      .actionbtn:hover {
+        background-color: #006905;
+        border-radius: 5px;
+      }
+
+      h1 {
+        text-align: left;
+      }
+
+      h2 {
+        font-size: 35px;
+        padding: 10px;
+      }
+
+      p {
+        text-align: left;
+        color: gray;
+        font-size: 16px;
+      }
+
+      #blankcoin {
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+      }
+
+      #blankdice {
+        height: 40px;
+        width: 40px;
+        padding: 12px;
+      }
+
+      #blankrng {
+        height: 40px;
+        width: 40px;
+        padding: 1px;
+      }
+
+      #blankball {
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+      }
+    </style>
+    <!--
+        - JavaScript and HTML must be in separate files
+       -->
+  </head>
+  <body>
+    <main>
+      <h1>Decider</h1>
+      <div id="content">
+        <p>Use the buttons below to help you make a decision!</p>
+        <div class="menu-container">
+          <button id="coinflip" class="menubtn">
+            <img src="assets/coin.gif" id="blankcoin" /> Coin Flip
+          </button>
+          <button id="rng" class="menubtn">
+            <img src="assets/rng.gif" id="blankrng" />Random Number
+          </button>
+          <button id="dice" class="menubtn">
+            <img src="assets/dice.gif" id="blankdice" />Dice Roll
+          </button>
+          <button id="eightball" class="menubtn">
+            <img src="assets/ball.gif" id="blankball" />Magic 8 Ball
+          </button>
+        </div>
+      </div>
+      <script src="popup.js"></script>
+    </main>
+  </body>
+</html>
